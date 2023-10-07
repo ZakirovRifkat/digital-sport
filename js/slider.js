@@ -11,8 +11,6 @@ const numberOfCards = card.length;
 function init() {
     const height = sliderLine.offsetHeight;
     slider.style.minHeight = height + "px";
-    console.log(numberOfCards);
-
     if (window.innerWidth <= 768) {
         AdapSize = 1;
     } else {
@@ -31,7 +29,6 @@ nextButton.addEventListener("click", () => {
     if (currentPosition < numberOfCards - AdapSize) {
         currentPosition++;
         sliderLine.style.transform = `translateX(-${currentPosition * 400}px)`;
-        console.log(currentPosition);
     } else {
         currentPosition = 0;
         sliderLine.style.transform = `translateX(-${currentPosition * 400}px)`;
@@ -42,7 +39,6 @@ prevButton.addEventListener("click", () => {
     if (currentPosition > 0) {
         currentPosition--;
         sliderLine.style.transform = `translateX(-${currentPosition * 400}px)`;
-        console.log(currentPosition);
     } else {
         currentPosition = numberOfCards - AdapSize;
         sliderLine.style.transform = `translateX(-${currentPosition * 400}px)`;
