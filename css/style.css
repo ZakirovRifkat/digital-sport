@@ -258,7 +258,263 @@ a {
 
     flex-shrink: 0;
 }
+/* Main Anime */
+.main-animate-banner {
+    width: 450px;
+    height: 450px;
+    /* background-color: red; */
+    position: relative;
+}
+.anime {
+    position: absolute;
+    /* background-color: blue;
+    border:3px solid white; */
+}
+.anime-1 {
+    width: 190px;
+    height: 160px;
+    right: 7%;
+    top: 7%;
+    z-index: 3;
 
+    animation: anime1 5s linear infinite;
+}
+.anime-2 {
+    width: 70px;
+    height: 65px;
+    z-index: 2;
+    top: 50%;
+    right: 5%;
+    transform: translate(0%, -50%);
+
+    animation: anime2 6s linear infinite;
+}
+.anime-3 {
+    width: 80px;
+    height: 75px;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%);
+    z-index: 3;
+
+    animation: anime3 10s linear infinite;
+}
+.anime-4 {
+    width: 400px;
+    height: 200px;
+    left: 52%;
+    bottom: 5%;
+    transform: translate(-50%);
+    z-index: 5;
+
+    animation: anime4 10s linear infinite;
+}
+.anime-5 {
+    width: 250px;
+    height: 150px;
+    top: 45%;
+    transform: translate(0%, -50%);
+    z-index: 4;
+
+    animation: anime5 8s linear ;
+}
+@keyframes anime1 {
+    0% {
+        right: 7%;
+        top: 7%;
+    }
+    50% {
+        right: 7%;
+        top: 0%;
+    }
+    100% {
+        right: 7%;
+        top: 7%;
+    }
+}
+@keyframes anime2 {
+    0% {
+        top: 50%;
+        right: 5%;
+        transform: rotate(0deg) translate(0%, -50%);
+    }
+    50% {
+        top: 47%;
+        right: 5%;
+        transform: rotate(-40deg) translate(0%, -50%);
+    }
+    100% {
+        top: 50%;
+        right: 5%;
+        transform: rotate(0deg) translate(0%, -50%);
+    }
+}
+@keyframes anime3 {
+    0% {
+        top: 15%;
+        left: 40%;
+        transform: translate(-50%);
+    }
+    50% {
+        top: 15%;
+        left: 40%;
+        transform: scale(0.8) rotate(-40deg) translate(-50%);
+    }
+    100% {
+        top: 15%;
+        left: 40%;
+        transform: translate(-50%);
+    }
+}
+@keyframes anime4 {
+    0% {
+    }
+    50% {
+    }
+    100% {
+    }
+}
+@keyframes anime5 {
+    0% {
+        top: 60%;
+        left: 10%;
+        transform:scale(0.8) translate(0%, -50%);
+    }
+    33% {
+        top: 45%;
+        left: 0;
+        transform: scale(1) rotate(10deg)translate(0%, -50%);
+    }
+    66%{
+        top: 50%;
+        left: 0;
+        transform: scale(1) rotate(-10deg)translate(0%, -50%);
+    }
+    100% {
+        top: 45%;
+        transform:scale(1) translate(0%, -50%);
+    }
+}
+/* Animate */
+.animate-container {
+    width: 446px;
+    height: 500px;
+    /* background-color: red; */
+    position: relative;
+}
+.item {
+    position: absolute;
+    /* background-color: blue;
+    border: 3px solid white; */
+}
+.item-1 {
+    width: 120px;
+    height: 100px;
+    bottom: 10px;
+    left: 40%;
+    transform: translate(-50%);
+
+    animation: item1 10s linear infinite;
+}
+.item-2 {
+    width: 150px;
+    height: 180px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+
+    animation: item2 6s linear infinite;
+}
+.item-3 {
+    width: 120px;
+    height: 120px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    animation: item3 6s linear infinite;
+}
+.item-4 {
+    width: 70px;
+    height: 90px;
+    left: 40px;
+    top: 45%;
+    transform: translate(0%, -50%);
+
+    animation: item4 13s linear infinite;
+}
+@keyframes item1 {
+    0% {
+        transform: rotate(0deg) translate(-50%);
+        bottom: 10px;
+    }
+
+    50% {
+        transform: rotate(30deg) translate(-50%);
+        bottom: 10px;
+    }
+    100% {
+        transform: rotate(0deg) translate(-50%);
+        bottom: 10px;
+    }
+}
+@keyframes item2 {
+    0% {
+        transform: rotate(0deg) translate(-50%);
+        top: 40px;
+    }
+
+    50% {
+        transform: rotate(-15deg) translate(-50%);
+        top: 0px;
+    }
+    100% {
+        transform: rotate(0deg) translate(-50%);
+        top: 40px;
+    }
+}
+@keyframes item3 {
+    0% {
+        transform: rotate(0deg) translate(0%, -50%);
+        right: 20px;
+        top: 50%;
+    }
+
+    50% {
+        transform: rotate(-15deg) translate(0%, -50%);
+        right: 20px;
+        top: 50%;
+    }
+    100% {
+        transform: rotate(0deg) translate(0%, -50%);
+        right: 20px;
+        top: 50%;
+    }
+}
+@keyframes item4 {
+    0% {
+        transform: rotate(0deg) translate(0%, -50%);
+        left: 40px;
+        top: 45%;
+    }
+
+    33% {
+        transform: rotate(-15deg) translate(0%, -50%);
+        left: 20px;
+        top: 50%;
+    }
+    66% {
+        transform: rotate(-15deg) translate(0%, -50%);
+        left: 0px;
+        top: 50%;
+    }
+    100% {
+        transform: rotate(0deg) translate(0%, -50%);
+        left: 40px;
+        top: 45%;
+    }
+}
+/*  */
 .module-about-us {
     display: flex;
 
@@ -973,11 +1229,11 @@ p {
         margin-top: 35px;
         gap: 40px;
     }
-
-    .about-us-spline {
+    /* Animate */
+    .animate-container {
         display: none;
     }
-
+    /*  */
     .about-us-textbox {
         width: auto;
         height: auto;
@@ -1085,4 +1341,58 @@ p {
     .footer-textbox-box-2 p {
         font-size: 16px;
     }
+    /*  */
+    .main-animate-banner {
+        width: 100%;
+        overflow: hidden;
+    }
+    .anime-1 {
+        width: 190px;
+        height: 160px;
+        right: 7%;
+        top: 7%;
+        z-index: 3;
+    
+        animation: anime1 5s linear infinite;
+    }
+    .anime-2 {
+        width: 70px;
+        height: 65px;
+        z-index: 2;
+        top: 50%;
+        right: 5%;
+        transform: translate(0%, -50%);
+    
+        animation: anime2 6s linear infinite;
+    }
+    .anime-3 {
+        width: 80px;
+        height: 75px;
+        top: 15%;
+        left: 40%;
+        transform: translate(-50%);
+        z-index: 3;
+    
+        animation: anime3 10s linear infinite;
+    }
+    .anime-4 {
+        width: 400px;
+        height: 200px;
+        left: 52%;
+        bottom: 5%;
+        transform: translate(-50%);
+        z-index: 5;
+    
+        animation: anime4 10s linear infinite;
+    }
+    .anime-5 {
+        width: 250px;
+        height: 150px;
+        top: 45%;
+        transform: translate(0%, -50%);
+        z-index: 4;
+    
+        animation: anime5 8s linear ;
+    }
+    /*  */
 }
