@@ -186,12 +186,14 @@ a {
     font-weight: 700;
     line-height: normal;
 
+    text-transform: uppercase;
+
     margin: 0;
 }
 
 .infobox-textbox-subtitle {
     color: #fff;
-    font-family: "Franko";
+    font-family: "Franko-Light";
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -307,9 +309,46 @@ a {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    line-height: 30px;
 }
+.module-partners {
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
 
+    margin-top: 100px;
+    gap: 50px;
+
+    flex-shrink: 0;
+}
+.partners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.partners-logo {
+    width: 150px;
+}
+.partners-name {
+    margin: 0;
+    max-width: 410px;
+
+    color: #fff;
+    font-family: "Franko-Light";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
 .module-editors {
+    /* background-color: red; */
     display: flex;
 
     width: 100%;
@@ -320,7 +359,7 @@ a {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 200px;
+    margin-top: 100px;
     gap: 10px;
 
     flex-shrink: 0;
@@ -396,12 +435,17 @@ a {
 }
 .slider-next {
     right: -35px;
+    background-image: url(../images/assets/next.svg);
+    background-repeat: no-repeat;
+    background-position: 52% 50%;
+    background-size: 40px;
 }
 .slider-prev {
     left: -35px;
-}
-.arrow {
-    width: 40px;
+    background-image: url(../images/assets/prev.svg);
+    background-repeat: no-repeat;
+    background-position: 36% 50%;
+    background-size: 40px;
 }
 @media screen and (max-width: 768px) {
     .slider {
@@ -411,14 +455,16 @@ a {
         width: 45px;
         height: 45px;
     }
-    .arrow{
+    .arrow {
         filter: drop-shadow(0px 0px 3px #b273db);
     }
     .slider-prev {
         left: -20px;
+        background-size: 35px;
     }
     .slider-next {
         right: -20px;
+        background-size: 35px;
     }
 }
 .editors-cards {
@@ -543,6 +589,7 @@ a {
     border: 0px;
     background-color: unset;
     text-decoration: underline;
+    cursor: pointer;
 }
 .card-textbox-email {
     margin: 0;
@@ -716,10 +763,6 @@ p {
 
     .about-us-textbox {
         width: 500px;
-    }
-
-    .module-editors {
-        margin-top: 140px;
     }
 }
 
@@ -944,7 +987,21 @@ p {
 
     .about-us-textbox-description {
         font-size: 16px;
+        line-height: 25px;
     }
+    /*  */
+    .partners {
+        flex-direction: column;
+    }
+    .partners-logo {
+        width: 200px;
+    }
+    .partners-name {
+        max-width: 340px;
+        font-size: 25px;
+        text-align: center;
+    }
+    /*  */
 
     .module-editors {
         margin-top: 50px;

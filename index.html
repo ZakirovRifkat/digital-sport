@@ -7,7 +7,7 @@
         <title>Главная — Мир</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+        <link rel="icon" type="image/svg" href="images/logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -56,10 +56,11 @@
                 <div class="intro-infobox">
                     <div class="infobox-textbox">
                         <p class="infobox-textbox-title">
-                            ГОТОВЫ УЗНАТЬ БОЛЬШЕ О ФИДЖИТАЛЕ И КИБЕРСПОРТЕ?
+                            Создание наука-ориентированное направление фиджитал
+                            и киберспорта в России. 
                         </p>
                         <p class="infobox-textbox-subtitle">
-                            публикуем самые актуальные новости из phygital &
+                            Публикуем самые актуальные новости из phygital &
                             esport
                         </p>
                     </div>
@@ -103,8 +104,21 @@
                     </p>
                 </div>
             </div>
+            <div class="module-partners">
+                <p class="editors-title">Наши партнеры</p>
+                <div class="partners">
+                    <img
+                        class="partners-logo"
+                        alt="partners-logo"
+                        src="images/assets/УУНиТ.png"
+                    />
+                    <p class="partners-name">
+                        Уфимский университет науки и технологий
+                    </p>
+                </div>
+            </div>
             <div class="module-editors" id="editors-start-point">
-                <p class="editors-title">Редакционная коллегия</p>
+                <p class="editors-title">Управляющие</p>
                 <p class="editors-subtitle">
                     Вдохновители журнала, без которых выход новых выпусков
                     невозможен
@@ -181,6 +195,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="module-editors" id="editors-start-point">
                 <p class="editors-title">Редакционная коллегия</p>
                 <p class="editors-subtitle">
@@ -189,12 +204,8 @@
                 </p>
                 <!--Slaider-->
                 <div class="slider-container">
-                    <div class="slider-button slider-next">
-                        <img class="arrow" src="images/assets/next.svg" />
-                    </div>
-                    <div class="slider-button slider-prev">
-                        <img class="arrow" src="images/assets/prev.svg" />
-                    </div>
+                    <div class="slider-button slider-next"></div>
+                    <div class="slider-button slider-prev"></div>
                     <div class="slider">
                         <div class="slider-line">
                             <!-- 1 -->
@@ -512,89 +523,6 @@
                 <!--  -->
             </div>
         </div>
-        <!--Script-->
-        <script>
-            const buttons = document.querySelectorAll(".show-more-button");
-            buttons.forEach((button) => {
-                const description = button.previousElementSibling;
-
-                button.addEventListener("click", () => {
-                    if (description.style.maxHeight) {
-                        description.style.maxHeight = null;
-                        button.textContent = "Показать полностью";
-                    } else {
-                        description.style.maxHeight =
-                            description.scrollHeight + "px";
-                        button.textContent = "Скрыть";
-                    }
-                });
-            });
-        </script>
-        <!--Script-->
-        <!-- Slider -->
-        <script>
-            const slider = document.querySelector(".slider");
-            const sliderLine = document.querySelector(".slider-line");
-            const nextButton = document.querySelector(".slider-next");
-            const prevButton = document.querySelector(".slider-prev");
-            const card = document.querySelectorAll(".card");
-
-            let currentPosition = 0;
-            let AdapSize = 3;
-
-            const numberOfCards = card.length;
-            function init() {
-                const height = sliderLine.offsetHeight;
-                slider.style.minHeight = height + "px";
-                console.log(numberOfCards);
-
-                if (window.innerWidth <= 768) {
-                    AdapSize = 1;
-                } else {
-                    AdapSize = 3;
-                }
-
-                if (currentPosition > numberOfCards - AdapSize) {
-                    currentPosition = numberOfCards - AdapSize;
-                    sliderLine.style.transform = `translateX(-${
-                        currentPosition * 400
-                    }px)`;
-                }
-            }
-            init();
-            window.addEventListener("resize", init);
-
-            nextButton.addEventListener("click", () => {
-                if (currentPosition < numberOfCards - AdapSize) {
-                    currentPosition++;
-                    sliderLine.style.transform = `translateX(-${
-                        currentPosition * 400
-                    }px)`;
-                    console.log(currentPosition);
-                } else {
-                    currentPosition = 0;
-                    sliderLine.style.transform = `translateX(-${
-                        currentPosition * 400
-                    }px)`;
-                }
-            });
-
-            prevButton.addEventListener("click", () => {
-                if (currentPosition > 0) {
-                    currentPosition--;
-                    sliderLine.style.transform = `translateX(-${
-                        currentPosition * 400
-                    }px)`;
-                    console.log(currentPosition);
-                } else {
-                    currentPosition = numberOfCards - AdapSize;
-                    sliderLine.style.transform = `translateX(-${
-                        currentPosition * 400
-                    }px)`;
-                }
-            });
-        </script>
-        <!-- Slider -->
         <div class="wrapper-footer-container">
             <div class="footer-obtaining">
                 <div class="footer-messangers">
@@ -629,5 +557,7 @@
 
         <script src="js/jquery-3.7.0.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/showMore.js"></script>
     </body>
 </html>

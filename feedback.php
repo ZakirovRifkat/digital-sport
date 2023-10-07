@@ -6,7 +6,7 @@
     <title>Контакты — Мир</title>
     <link rel="stylesheet" href="css/feedback.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/svg" href="images/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap" rel="stylesheet">
