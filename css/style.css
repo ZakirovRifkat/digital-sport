@@ -723,6 +723,16 @@ a {
         background-size: 35px;
     }
 }
+@media screen and (max-width: 390px) {
+    .slider-prev {
+        left: -9px;
+        background-size: 35px;
+    }
+    .slider-next {
+        right: -9px;
+        background-size: 35px;
+    }
+}
 .editors-cards {
     display: flex;
     justify-content: center;
