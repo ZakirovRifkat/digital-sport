@@ -541,7 +541,6 @@ p {
     }
 
     .module-buttons a figure {
-        width: 150px;
         height: 150px;
         margin: 7px 7px;
     }
@@ -551,7 +550,6 @@ p {
     }
 
     .module-buttons a figure p {
-        width: 115px;
         font-size: 18px;
     }
 
