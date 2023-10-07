@@ -74,7 +74,7 @@
                             </figure>
                         </a>
                 
-                        <a class="connection-link" href="https://vk.com/feed">
+                        <a class="connection-link" href="https://vk.com/world_of_digital_and_esports">
                             <figure>
                                 <img src="icons/feedback-vk.png">
                             </figure>
