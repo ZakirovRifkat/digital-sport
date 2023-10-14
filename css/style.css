@@ -317,7 +317,7 @@ a {
     z-index: 4;
 
     animation: anime5 8s linear ;
-   
+    
 }
 @keyframes anime1 {
     0% {
@@ -367,7 +367,14 @@ a {
         transform: translate(-50%);
     }
 }
-
+@keyframes anime4 {
+    0% {
+    }
+    50% {
+    }
+    100% {
+    }
+}
 @keyframes anime5 {
     0% {
         top: 60%;
@@ -387,47 +394,6 @@ a {
     100% {
         top: 45%;
         transform:scale(1) translate(0%, -50%);
-    }
-}
-
-@media screen and (max-width: 768px){
-    .anime-5 {
-        width: 250px;
-        height: 150px;
-        z-index: 4;
-    
-        animation: anime5 8s linear ;
-        left: 20%;
-        bottom: 7%;
-        transform: translate(-50%);
-       
-    }
-    @keyframes anime5 {
-        0% {
-           
-        }
-        33% {
-          
-        }
-        66%{
-          
-        }
-        100% {
-           
-        }
-    }
-}
-@media screen and (max-width: 520px){
-    .anime-5 {
-        width: 250px;
-        height: 150px;
-        z-index: 4;
-    
-        animation: anime4 8s linear ;
-        left: 4%;
-        bottom: 7%;
-        transform: translate(-50%);
-       
     }
 }
 /* Animate */
